@@ -7,7 +7,8 @@ A hallmark of schizophrenia is a reduction in ASSR; this project aims at reprodu
 
 Specifically, we aim at reproducing results from an experiment looking at the effects of increased CB1 receptor availability and GABA receptor deficits, as these have been linked to the EEG abnormalities that characterize schizophrenia.
 
-![ASSR](/Users/irenebernardi/Desktop/GSoC_files/README_pictures/ASSR_SZ.PNG/ "ASSR").
+
+![README_pictures](/Users/irenebernardi/Desktop/GSoC_files/README_pictures/ASSR_SZ.PNG/ "ASSR").
 
 We will start by running batch simulation tasks to pull out connectivity rules from the A1 model, modifying GABA and CB1 Receptors. This step will be run on a scaled version of the A1, so that I will be able to use a personal computer, but I may employ cloud resources as well.Then, we will analyze parameter sweeps for local field potentials, using the LFPy toolbox. Afterwards, we will move to parameter optimization of the A1 model so that it reproduces the ASSR, using the Optuna HPO toolkit. Our ultimate goal is to reproduce the ASSR phenomenon in the A1 model. 
 
