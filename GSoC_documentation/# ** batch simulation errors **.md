@@ -1,4 +1,4 @@
-# ** batch simulation errors **
+# batch simulation errors
 
 - before running: substitute lines in [init.py](http://init.py) w/: 
 
