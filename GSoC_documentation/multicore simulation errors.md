@@ -1,6 +1,6 @@
 # Errors I ran into while running multicore simulations 
 
-**REMINDER**: always load mods first  `nrnivmodl ../mod` or `nrnivmodl mod`
+**REMINDER**: always load mods first with `nrnivmodl ../mod` or `nrnivmodl mod`
 
 This always needs to be ran from the folder where the file that's being used for the simulation is.
 
