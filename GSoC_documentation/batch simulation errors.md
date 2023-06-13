@@ -17,3 +17,29 @@ If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSi
         b.runCfg = {'type': 'mpi_bulletin',
                                 'script': 'init.py',
                                 'skip': True}
+
+
+- When specifying values to change (here 'connWeight', delay' and 'loc') in cfg.py and batch.py like the following: 
+
+     **batch.py:**
+      
+      def batchWeight():
+        # Create variable of type ordered dictionary (NetPyNE's customized version)
+        params = specs.ODict()
+
+        # fill in with parameters to explore and range of values (key has to coincide with a variable in simConfig)
+        params['connWeight'] = [0.4e-3, 0.9e-3, 1.4e-3]
+        params['delay'] = [2, 4, 6]
+        params['loc'] = [0.25, 0.5, 0.75]
+        
+        
+     **cfg.py: should look like this **
+
+      cfg.connWeight = []
+      cfg.delay = []
+      cfg.loc = []
+      
+      
+     When I set the values to explore in cfg.py, the simulation ignored them and ran with the values in `params` in `batch.py`.
+
+
