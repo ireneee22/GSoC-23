@@ -2,7 +2,6 @@
 
 - before running: substitute lines in [init.py](http://init.py) w/: 
 
-*# read cfg and netParams from command line arguments if available; otherwise use default*
 
 `simConfig, netParams = sim.readCmdLineArgs(simConfigDefault='tut8_cfg.py', netParamsDefault='tut8_netParams.py')`
 
