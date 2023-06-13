@@ -5,7 +5,7 @@
 
 `simConfig, netParams = sim.readCmdLineArgs(simConfigDefault='tut8_cfg.py', netParamsDefault='tut8_netParams.py')`
 
-*# Create network and run `simulation*sim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig)`
+`simulationsim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig)`
 
 If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSimulateAnalzye`
 
