@@ -1,5 +1,8 @@
 # Errors I ran into while running multicore simulations 
 
+REMINDER: always load mods first : `nrnivmodl ../mod` or `nrnivmodl mod`
+This always needs to be ran from the folder where [init.py](http://init.py) itself is. 
+If `mod file not found` , `nrnivmodl /path/to/mod/file` may work
 
 - `mpiexec -n 4 nrniv -python -mpi init.py`
 
