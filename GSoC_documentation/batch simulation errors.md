@@ -21,7 +21,7 @@ If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSi
 
 - When specifying values to change (here `connWeight`, `delay` and `loc`): 
 
-     ** 'batch.py' should look like this **
+     **'batch.py' should look like this**
       
       def batchWeight():
         # Create variable of type ordered dictionary (NetPyNE's customized version)
@@ -33,7 +33,7 @@ If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSi
         params['loc'] = [0.25, 0.5, 0.75]
         
         
-     ** 'cfg.py' should look like this **
+     **'cfg.py' should look like this**
 
       cfg.connWeight = []
       cfg.delay = []
