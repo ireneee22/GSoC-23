@@ -9,7 +9,7 @@
 
 If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSimulateAnalzye`
 
-- make sure 'type' is set to mpi_bulletin and not mpi:
+- make sure `type` is set to `mpi_bulletin` and not `mpi`:
 
       b.batchLabel = 'tauWeight'
         b.saveFolder = 'ca3attempt_data'
