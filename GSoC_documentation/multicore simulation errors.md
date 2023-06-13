@@ -2,9 +2,11 @@
 
 **REMINDER**: always load mods first  `nrnivmodl ../mod` or `nrnivmodl mod`
 
-This always needs to be ran from the folder where [init.py](http://init.py) itself is. 
+This always needs to be ran from the folder where the file that's being used for the simulation is.
 
 If `mod file not found` , `nrnivmodl /path/to/mod/file` may work.
+
+
 
 - `mpiexec -n 4 nrniv -python -mpi init.py`
 
