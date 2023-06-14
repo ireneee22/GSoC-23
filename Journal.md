@@ -27,9 +27,9 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
 
 **Week 3**
 - *June 12th - 14th*
-  - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM -> document
- - issues with libnrnmech.so ?? 
+  - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM -> document (...)
+  - issues with libnrnmech.so (...)
  
--current issues: VSC remote ext , librnrmech.so
+  - issues with VSC remote ext
 
 
