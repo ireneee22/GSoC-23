@@ -1,4 +1,4 @@
-# [Batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/batch.py) description 
+# [A1 Batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/batch.py) description 
 
 TODO: translate italian 
 
