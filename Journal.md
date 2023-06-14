@@ -7,7 +7,7 @@
 - *May 29th - 31st*
   - Documented the structure of A1 [cfg.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/cfg.py) [(here)](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/A1%20'cfg.py'%20description.md), A1 [netParams.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/netParams.py) [(here)](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/A1%20'netParams.py'%20description.md) 
 and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/batch.py) [(here)](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/A1%20'batch.py'%20description.md).
-  - First meeting to establish next steps : running a scaled batch script, setting up virtual machine on Google Cloud and running the batch script on the VM.
+  - First official meeting to establish next steps : running a scaled batch script, setting up virtual machine on Google Cloud and running the batch script on the VM.
 
 - *June 1st, 2nd*
 	 - ran multicore sim of [tutorial 8](http://www.netpyne.org/tutorial.html#tutorial-8-running-batch-simulations) batch.py on terminal 
@@ -19,7 +19,7 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
 
 - *June 5th - 7th*
   - issues with SSH keypair on VM   
-  - meeting on useful LINUX commands, VM goals for the next week 
+  - meeting on useful LINUX commands, VM goals for the next week, SSH keypair issues
 
 - *June 8th, 9th*
 	- figured out SSH keypair on VM, see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/Issues%20generating%20SSH%20keypair%20for%20Google%20Cloud%20VM.md)
@@ -30,6 +30,6 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
   - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM -> document
  - issues with libnrnmech.so ?? 
  
--current issues: VSC remote ext 
+-current issues: VSC remote ext , librnrmech.so
 
 
