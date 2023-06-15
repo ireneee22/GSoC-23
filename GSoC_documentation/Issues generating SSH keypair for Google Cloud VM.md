@@ -30,3 +30,4 @@ Things that helped:
 - checking active status of ssh through `sudo service ssh status` and running `sudo service ssh restart`
 - deleting all keys from local and virtual machine and starting from scratch
 - making sure I was connecting to the right username and not to the name of the VM itself 
+- making sure user in .ssh/id_rsa is set to VM user
