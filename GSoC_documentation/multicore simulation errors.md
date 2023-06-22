@@ -2,7 +2,7 @@
 
 **REMINDER**: always load mods first with `nrnivmodl ../mod` or `nrnivmodl mod`
 
-This always needs to be ran from the folder where the file that's being used for the simulation is.
+This always needs to be ran from the folder where the mod file is -> the x86_64 should always end up within 'mod'.
 
 If `mod file not found` , `nrnivmodl /path/to/mod/file` may work.
 
