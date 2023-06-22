@@ -19,29 +19,174 @@ We will focus on PV, SOM, GAT1, and NMDA.
 
 
    *In A1 netParams:*
+   
+   **Cell parameters**
 
-   *In A1 cfg:**
+   Itypes = ['PV', 'SOM', 'VIP', 'NGF']
+
+   **Load cell rules previously saved using netpyne format**
+
+      ```cellParamLabels = ['IT2_reduced', 'IT3_reduced', 'ITP4_reduced', 'ITS4_reduced',
+         'IT5A_reduced', 'CT5A_reduced', 'IT5B_reduced','PT5B_reduced', 'CT5B_reduced', 'IT6_reduced', 'CT6_reduced',
+         'PV_reduced', 'SOM_reduced', 'VIP_reduced', 'NGF_reduced','RE_reduced', 'TC_reduced', 'HTC_reduced', 'TI_reduced']```
+   
+  **population parameters (Layer 2)**
+  
+  `netParams.popParams['SOM2'] =    {'cellType': 'SOM', 'cellModel': 'HH_reduced',   'ynormRange': layer['2'],   'density': density[('A1','SOM')][1]}`
+  
+  **List of I and E Pops to use later on**
+
+    ```Ipops = ['NGF1',                            # L1
+       'PV2', 'SOM2', 'VIP2', 'NGF2',      # L2
+       'PV3', 'SOM3', 'VIP3', 'NGF3',      # L3
+       'PV4', 'SOM4', 'VIP4', 'NGF4',      # L4
+       'PV5A', 'SOM5A', 'VIP5A', 'NGF5A',  # L5A
+       'PV5B', 'SOM5B', 'VIP5B', 'NGF5B',  # L5B
+       'PV6', 'SOM6', 'VIP6', 'NGF6']      # L6```
+
+   **Synaptic mechanisms parameters**
+
+    `SOMESynMech = ['GABAASlow','GABAB'] # synaptic mechanisms used for somatostatin-positive (SOM+) inhibitory cells.`
+
+    `SOMISynMech = ['GABAASlow'] #synaptic mechanisms that are typically used for somatostatin-negative (SOM-) inhibitory cells.`
 
 
-## **GAT1 (GABA Transporter 1):**
+   **I -> E**
+   
+   ```if cfg.addConn and cfg.IEGain > 0.0:
+   if connDataSource['I->E/I'] == 'Allen_custom':
+
+    ESynMech = ['AMPA', 'NMDA']
+    SOMESynMech = ['GABAASlow','GABAB']
+    SOMISynMech = ['GABAASlow']
+    PVSynMech = ['GABAA']
+    VIPSynMech = ['GABAA_VIP']
+    NGFSynMech = ['GABAA', 'GABAB']
+
+    prob = '%f * exp(-dist_2D/%f)' % (pmat[pre][post], lmat[pre][post])
+
+                        if 'SOM' in pre:
+                            synMech = SOMESynMech
+                        elif 'PV' in pre:
+                            synMech = PVSynMech
+                        elif 'VIP' in pre:
+                            synMech = VIPSynMech
+                        elif 'NGF' in pre:
+                            synMech = NGFSynMech
+```
+
+
+
+**I->I**
+
+```if connDataSource['I->E/I'] == 'Allen_custom':
+
+    for pre in Ipops:
+        for post in Ipops:
+            for l in layerGainLabels:
+
+                prob = '%f * exp(-dist_2D/%f)' % (pmat[pre][post], lmat[pre][post])
+
+                if 'SOM' in pre:
+                    synMech = SOMISynMech
+                elif 'PV' in pre:
+                    synMech = PVSynMech
+                elif 'VIP' in pre:
+                    synMech = VIPSynMech
+                elif 'NGF' in pre:
+                    synMech = NGFSynMech
+```
+
+
+
+
+**Thalamic connectivity params**
+
+```if cfg.addConn and cfg.addIntraThalamicConn:
+    for pre in TEpops+TIpops:
+        for post in TEpops+TIpops:
+            if post in pmat[pre]:
+                # for syns use ESynMech, SOMESynMech and SOMISynMech 
+                if pre in TEpops:     # E->E/I
+                    syn = ESynMech
+                    synWeightFactor = cfg.synWeightFractionEE
+                elif post in TEpops:  # I->E
+                    syn = SOMESynMech
+                    synWeightFactor = cfg.synWeightFractionIE
+                else:                  # I->I
+                    syn = SOMISynMech
+                    synWeightFactor = [1.0]
+```
+
+
+**Thalamocortical**
+
+```if cfg.addConn and cfg.addThalamoCorticalConn:
+    for pre in TEpops+TIpops:
+        for post in Epops+Ipops:
+            if post in pmat[pre]:
+                # for syns use ESynMech, SOMESynMech and SOMISynMech 
+                if pre in TEpops:     # E->E/I
+                    syn = ESynMech
+                    synWeightFactor = cfg.synWeightFractionEE
+                elif post in Epops:  # I->E
+                    syn = SOMESynMech
+                    synWeightFactor = cfg.synWeightFractionIE
+                else:                  # I->I
+                    syn = SOMISynMech
+                    synWeightFactor = [1.0]
+```
+
+
+**Subcellular connectivity**
+
+**E->I**
+ 
+ ```netParams.subConnParams['E->I'] = {
+'preConds': {'cellType': ['IT', 'ITS4', 'PT', 'CT']},
+'postConds': {'cellType': ['PV','SOM','NGF', 'VIP']},
+'sec': 'all',
+'groupSynMechs': ESynMech,
+'density': 'uniform'}
+```
+
+**SOM -> E: all_dend**
+
+ ```netParams.subConnParams['SOM->E'] = {
+'preConds': {'cellType': ['SOM']},
+'postConds': {'cellType': ['IT', 'ITS4', 'PT', 'CT']},
+'sec': 'dend_all',
+'groupSynMechs': SOMESynMech,
+'density': 'uniform'}
+```
+
+
+
+
+  
+  *In A1 cfg:*
+
+
+## **GAT1:**
   - regulates GABA reuptake, terminates GABAergic neurotransmissioncellular space. 
   - used to simulate adequate level of inhibitory neurotransmission/GABA dynamics.
 
    
    *In A1 netParams:*
-
+   not specified, all GABAergic
+   
    *In A1 cfg:*
+   not specified, all GABAergic
 
-
-## **NMDA (N-Methyl-D-Aspartate)**
+## **NMDA**
  - ionotropic glutamate receptors, involved in LTP and LTD-> used to reflect synaptic plasticity 
 
 
-   *In A1 netParams:*
+ *In A1 netParams:*
 
-  - 
+  -**Synaptic mechanisms parameters**
 
-
+    `netParams.synMechParams['NMDA'] = {'mod': 'MyExp2SynNMDABB', 'tau1NMDA': 15, 'tau2NMDA': 150, 'e': 0}`
 
    *In A1 cfg:*
 
