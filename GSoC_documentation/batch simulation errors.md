@@ -42,7 +42,7 @@ If not working, substitute  `simulationsim.creatSimulateAnalzye` to `sim.creatSi
       
      When I set the values to explore in cfg.py, the simulation ignored them and ran with the values in `params` in `batch.py`.
 
-     When running batch.py gives this error:
+     **When running batch.py gives this error:**
   
              synMechs = [
              File "/Users/irenebernardi/opt/anaconda3/envs/netpyne/lib/python3.9/site-packages/netpyne/cell/compartCell.py", line                   1676, in <listcomp>
