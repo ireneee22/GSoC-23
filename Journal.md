@@ -26,10 +26,23 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
 
 
 **Week 3**
+
 - *June 12th - 14th*
-  - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM -> document (...)
-  - issues with libnrnmech.so (...)
+  - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM.
+
+- *June 15th - 16th*
+  - meeting on VSC remote extension (see see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/Issues%20generating%20SSH%20keypair%20for%20Google%20Cloud%20VM.md) , mods compiling issues on VM and .err files in batch output
+
  
-  - issues with VSC remote ext
+**Week 3**
+
+ - *June 19th - 20th*
+   - fixed mods issues on VM (see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/multicore%20simulation%20errors.md))
+   - still had issues in batch.py output (.err files), partial solutions [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/batch%20simulation%20errors.md)
+
+- *June 20th-21st*
+  - made a [.md file](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/SCZparameters.md) with details of the SCZ params we'll sweep
+  - tried to fix batch .err files 
+
 
 
