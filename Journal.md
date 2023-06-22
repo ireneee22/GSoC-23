@@ -31,7 +31,7 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
   - ran [init_demo.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thalamocortical_model_data/blob/main/model/init_demo.py) and [CA3 batch.py](https://github.com/ireneee22/GSoC-23/blob/main/CA3batch.py) on VM.
 
 - *June 15th - 16th*
-  - meeting on VSC remote extension (see see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/Issues%20generating%20SSH%20keypair%20for%20Google%20Cloud%20VM.md) , mods compiling issues on VM and .err files in batch output
+  - meeting on VSC remote extension (see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/Issues%20generating%20SSH%20keypair%20for%20Google%20Cloud%20VM.md) , mods compiling issues on VM and .err files in batch output.
 
  
 **Week 3**
