@@ -1,8 +1,0 @@
-Warning: no DISPLAY environment variable.
---No graphics will be displayed.
-NEURON -- VERSION 8.2.2 HEAD (93d41fafd) 2022-12-15
-Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
-See http://neuron.yale.edu/neuron/credits
-
-0 /Users/irenebernardi/opt/anaconda3/envs/netpyne/bin/nrniv: can't open simConfig=/Users/irenebernardi/Desktop/GSoC_files/netpyne/examples/ca3model_3pops/ca3_data//batchWeight_2_2_1_cfg.json
-Could not open netParams=/Users/irenebernardi/Desktop/GSoC_files/netpyne/examples/ca3model_3pops/ca3_data//batchWeight_netParams.py
