@@ -1,0 +1,36 @@
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from /Users/irenebernardi/Desktop/GSoC_files/netpyne/examples/ca3model_3pops/ca3_data//batchWeight_0_0_1_cfg.json
+Loading file /Users/irenebernardi/Desktop/GSoC_files/netpyne/examples/ca3model_3pops/ca3_data//batchWeight_0_0_1_cfg.json ... 
+Loading simConfig...
+Importing netParams from /Users/irenebernardi/Desktop/GSoC_files/netpyne/examples/ca3model_3pops/ca3_data//batchWeight_netParams.py
+
+Start time:  2023-06-28 16:11:06.820691
+
+Creating network of 0 cell populations on 1 hosts...
+  Number of cells on node 0: 0 
+  Done; cell creation time = 0.00 s.
+Making connections...
+  Number of connections on node 0: 0 
+  Done; cell connection time = 0.00 s.
+  Number of stims on node 0: 0 
+  Done; cell stims creation time = 0.00 s.
+
+Running simulation using NEURON for 1000.0 ms...
+  Done; run time = 0.03 s; real-time ratio: 39.57.
+
+Gathering data...
+  Done; gather time = 0.00 s.
+
+Analyzing...
+  Cells: 0
+  Connections: 0 (0.00 per cell)
+  Spikes: 0 (0.00 Hz)
+  Simulated time: 1.0 s; 1 workers
+  Run time: 0.03 s
+Warning: data won't be saved. No output format specified (consider sim.cfg.savePickle, sim.cfg.saveJson etc.)
+  Done; plotting time = 0.00 s
+
+Total time = 0.03 s
+first instance of v_init
+first instance of tstop
