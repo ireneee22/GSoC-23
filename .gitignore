@@ -1,0 +1,8 @@
+*.pyc 
+*.err 
+*.json
+*.png
+/mod/
+/tut8/
+
+
