@@ -42,8 +42,7 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
   - made a [.md file](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/SCZparameters.md) with details of the SCZ params we'll sweep
 
  - *June 22nd - 23rd*
-   - meeting on batch .err files, Git file management, ` 
-   createSimulateAnalyze`  function specifics
+   - meeting on batch `.err` files, Git file management, `createSimulateAnalyze`  function specifics
 
 **Week 4**
 
@@ -52,9 +51,9 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
  - *June 27th*
    - lab meeting on future steps to take for A1 batch, as per [this](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit) document. Goals: reproducing EEG ERPs in control and in SCZ on HPC. 
  - *June 28th, 29th, 30th*
-   - made pull request to remove unused `import lib` line in CA3 netParams.py
+   - made pull request to remove unused `import lib` line in CA3 `netParams.py`
    - learned how to use NSG San Diego portal and how to run tasks on zipped data -> will document errors once I figure out what's causing them : need to fix local first 
-   - tried fixing .err files -> will make separate file explaning what fixed it and what the issue was once I figure it out
+   - tried fixing `.err` files -> will make separate file explaning what fixed it and what the issue was once I figure it out
 
 
 
