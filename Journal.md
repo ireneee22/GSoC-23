@@ -50,7 +50,7 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
  - *June 26th*
    - worked on Git file management, read relevant literature on mismatch negativity (MMN), stimulus specific adaptation (SSA) and deviant detection (DD) ([see here](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit)).
  - *June 27th*
-   - meeting on future steps to take for A1 batch, as per [this](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit) document. Goals: reproducing EEG ERPs in control and in SCZ on HPC. 
+   - lab meeting on future steps to take for A1 batch, as per [this](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit) document. Goals: reproducing EEG ERPs in control and in SCZ on HPC. 
  - *June 28th, 29th, 30th*
    - made pull request to remove unused `import lib` line in CA3 netParams.py
    - learned how to use NSG San Diego portal and how to run tasks on zipped data -> will document errors once I figure out what's causing them -> need to fix local first 
