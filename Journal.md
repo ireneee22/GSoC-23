@@ -53,7 +53,7 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
    - lab meeting on future steps to take for A1 batch, as per [this](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit) document. Goals: reproducing EEG ERPs in control and in SCZ on HPC. 
  - *June 28th, 29th, 30th*
    - made pull request to remove unused `import lib` line in CA3 netParams.py
-   - learned how to use NSG San Diego portal and how to run tasks on zipped data -> will document errors once I figure out what's causing them -> need to fix local first 
+   - learned how to use NSG San Diego portal and how to run tasks on zipped data -> will document errors once I figure out what's causing them : need to fix local first 
    - tried fixing .err files -> will make separate file explaning what fixed it and what the issue was once I figure it out
 
 
