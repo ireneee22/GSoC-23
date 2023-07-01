@@ -36,13 +36,29 @@ and A1 [batch.py](https://github.com/NathanKlineInstitute/Macaque_auditory_thala
  
 **Week 3**
 
- - *June 19th - 20th*
+ - *June 19th - 21st*
    - fixed mods issues on VM (see [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/multicore%20simulation%20errors.md))
    - still had issues in batch.py output (.err files), partial solutions [here](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/batch%20simulation%20errors.md)
-
-- *June 20th-21st*
   - made a [.md file](https://github.com/ireneee22/GSoC-23/blob/main/GSoC_documentation/SCZparameters.md) with details of the SCZ params we'll sweep
-  - tried to fix batch .err files 
+
+ - *June 22nd - 23rd*
+   - meeting on batch .err files, Git file management, ` 
+   createSimulateAnalyze`  function specifics
+
+**Week 4**
+
+ - *June 26th*
+   - worked on Git file management, read relevant literature on mismatch negativity (MMN), stimulus specific adaptation (SSA) and deviant detection (DD) ([see here](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit)).
+ - *June 27th*
+   - meeting on future steps to take for A1 batch, as per [this](https://docs.google.com/document/d/14AhPRCchy3o4aSPvPBy1iNlrdFQQm5be9c9O2lXk7a4/edit) document. Goals: reproducing EEG ERPs in control and in SCZ on HPC. 
+ - *June 28th, 29th, 30th*
+   - made pull request to remove unused `import lib` line in CA3 netParams.py
+   - learned how to use NSG San Diego portal and how to run tasks on zipped data -> will document errors once I figure out what's causing them -> need to fix local first 
+   - tried fixing .err files -> will make separate file explaning what fixed it and what the issue was once I figure it out
+
+
+
+
 
 
 
